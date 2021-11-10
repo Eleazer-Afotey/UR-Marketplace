@@ -1,0 +1,38 @@
+DOWNLOADING GIT
+
+1.  a. Check if git is installed on your machine [git --version]
+    b. Please download it if you dont have it.
+
+CONFIGURE
+add your name 
+1. git config --global user.name "your_username"
+
+ add your email
+2. git config --global user.email "your_email_address@example.com"
+
+Check if they are added
+3. git config --global --list
+
+
+CLONE THE RESPOSITORY VIA GITHUB
+1. git clone 'link' (this link can be found on github please build a token if needed)
+
+
+CREATE A BRNACH
+1. git checkout -b "branch name"
+
+
+PULL FROM REMOTE RESPOSITORY
+1. git pull origin master(main)
+
+
+{Write all code}
+
+ADD AND COMMIT CHANGES
+1. git add .
+2. git commit -m "message"
+3. switch to local master branch
+
+PUSH CHANGES
+1. git push origin master(main)
+
