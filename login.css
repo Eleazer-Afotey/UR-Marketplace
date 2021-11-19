@@ -217,6 +217,17 @@ button{
     font-size: 14px;
 }
 
+#already{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+#already a{
+    text-decoration: none;
+    color: #C80000;
+}
+
 /*edits for specific screen sizes on sign up page*/
 @media screen and (min-width: 415px) and (max-width: 1200px){ 
     #text-logo{
