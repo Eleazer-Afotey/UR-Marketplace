@@ -1,0 +1,288 @@
+body{
+    background-color: #F8F8F8;
+}
+
+/*page properties that all screen sizes share*/
+
+#text-logo{
+    font-size: 20px;
+    transform: translate(15%,400%);
+}
+
+#text-logo a{
+    text-decoration: none;
+    color: #163C75;
+}
+
+#statement{
+    font-family: cursive;
+    font-size: 16px;
+    transform: translate(15%, 650%);
+}
+
+.login-container{
+    border: 1px solid none;
+    background-color: white;
+    height: 350px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateX(185%);
+}
+
+.text-input{
+    width: 90%;
+    border: 1px solid lightgrey;
+    height: 50px;
+    transform: translateX(5%);
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+::-webkit-input-placeholder{
+    font-size: 18px;
+}
+
+#login-button{
+    height: 45px;
+    width: 91%;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+    border-radius: 6px;
+    transform: translateX(5%);
+    background-color: #DC143C;
+    color: white;
+    
+}
+
+#login-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#forgot a{
+    text-decoration: none;
+    color: #DC143C;
+}
+
+hr{ /*horizontal line*/
+    width: 90%;
+}
+
+input{
+    font-size: 18px;
+}
+
+button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#login-button:hover{
+    background-color: #C80000;
+}
+
+#create-account:hover{
+    background-color: #002D62;
+}
+
+#forgot{
+    text-align: center;
+}
+
+#create-account{
+    height: 35px;
+    width: 61%;
+    border: 1px solid lightgrey;
+    margin-top: 15px;
+    border-radius: 6px;
+    transform: translateX(32.5%);
+    background-color: #163C75;
+}
+
+#create-account a{
+    text-decoration: none;
+    color: white;
+}
+
+/*edits for specific screen sizes*/
+
+@media screen and (min-width: 1920px){
+    #text-logo{
+        font-size: 30px; 
+    }
+    
+    #statement{
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1200px){
+    #text-logo{
+        font-size: 18px;
+        transform: translate(27.5%,25%);
+    }
+
+    #statement{
+        font-size: 16px;
+        transform: translateX(25%);
+    }
+    
+    .login-container{
+        height: 350px;
+        width: 50%;
+        transform: translate(50%,25%);
+    }
+}
+
+@media screen and (max-width:414px){
+    #text-logo{
+        font-size: 14px;
+        transform: translate(13%,40%);
+    }
+
+    #statement{
+        font-size: 12px;
+        transform: translateX(10.5%);
+    }
+    
+    .login-container{
+        height: 345px;
+        width: 90%;
+        transform: translate(5.5%,25%);
+    }
+}
+
+@media screen and (max-width:320px){
+    #text-logo{
+        font-size: 12px;
+        transform: translate(11.5%,40%);
+    }
+
+    #statement{
+        font-size: 10px;
+        transform: translateX(10%);
+    }
+    
+    .login-container{
+        height: 100%;
+        width: 95%;
+        transform: translate(2.5%,15%);
+    }
+
+    #create-account{
+        margin-top: 0;
+        margin-bottom: 2.5%;
+    }
+}
+
+/*designs specifically for signup-page*/
+#signupHeader{
+    text-align: center;
+}
+
+.signup-container{
+    border: 1px solid none;
+    background-color: white;
+    height: 515px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateX(125%);
+}
+
+#signupButton{
+        height: 45px;
+        width: 91%;
+        border: 1px solid lightgrey;
+        margin-top: 20px;
+        border-radius: 6px;
+        transform: translateX(5%);
+        background-color: #163C75;;
+        color: white;
+        position: fixed;
+}
+
+#signupButton a{
+    text-decoration: none;
+    color: white;
+}
+
+#signupButton:hover{
+    background-color: #002D62;
+}
+
+#signupMessage{
+    transform: translateX(50%); 
+    font-size: 14px;
+}
+
+/*edits for specific screen sizes on sign up page*/
+@media screen and (min-width: 415px) and (max-width: 1200px){ 
+    #text-logo{
+        font-size: 16px;
+        transform: translate(30%,25%);
+    }
+
+    #statement{
+        font-size: 16px;
+        transform: translateX(25%);
+    }
+
+    .signup-container{
+        height: 515px;
+        width: 50%;
+        transform: translate(50%,25%);
+    }
+
+    #signupMessage{
+        transform: translate(25%,450%); 
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:414px){
+    #text-logo{
+        font-size: 14px;
+        transform: translate(13%,40%);
+    }
+
+    #statement{
+        font-size: 12px;
+        transform: translateX(10.5%);
+    }
+    
+    .signup-container{
+        height: 515px;
+        width: 90%;
+        transform: translate(5.5%,25%);
+    }
+
+    #signupMessage{
+        transform: translate(1%,250%); 
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:320px){
+    #text-logo{
+        font-size: 12px;
+        transform: translate(11.5%,40%);
+    }
+
+    #statement{
+        font-size: 10px;
+        transform: translateX(10%);
+    }
+    
+    .login-container{
+        height: 100%;
+        width: 95%;
+        transform: translate(2.5%,15%);
+    }
+
+    #create-account{
+        margin-top: 0;
+        margin-bottom: 2.5%;
+    }
+}
