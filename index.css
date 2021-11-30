@@ -1,0 +1,115 @@
+.fixed-top {
+  background-color: #002d62;
+}
+
+.navbar {
+  background-color: #002d62;
+}
+
+.navigator {
+  width: 100%;
+  background-color: #002d62;
+  padding-top: 10px;
+  color: white;
+}
+.navigator ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.navigator ul li {
+  font-family: "Montserrat";
+  width: 18%;
+  float: left;
+  font-size: 1.5vw;
+  text-align: right;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .navigator.col-md-12 {
+    display: block;
+  }
+  .menu.material-icons {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navigator.col-lg-12 {
+    display: block;
+  }
+
+  .menu.material-icons {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .navigator.col-sm-12 {
+    display: none;
+  }
+  .menu.material-icons {
+    color: white;
+  }
+}
+
+#menu {
+  display: none;
+  list-style-type: none;
+  font-family: "Montserrat";
+  color: white;
+}
+
+#menu li {
+  border: 1px;
+  padding: 10px;
+}
+
+.index-style {
+  margin: 10px;
+}
+
+.cards {
+  margin: 10px;
+  margin-top: 40px;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#footer-text {
+  margin-top: 15px;
+}
+
+.test {
+  padding: 40px;
+  margin-top: 40px;
+  height: 200px;
+  color: black;
+}
+
+.test h1 {
+  text-align: center;
+  font-family: "sacramento";
+  font-size: 100px;
+}
+
+.access {
+  margin-top: 50px;
+  background-color: black;
+}
+
+.logs {
+  margin-top: 15px;
+}
+
+.logs li {
+  margin-top: 20px;
+  margin: 5px;
+  list-style-type: none;
+  color: white;
+  font-family: "Montserrat";
+  float: left;
+}
