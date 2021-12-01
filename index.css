@@ -118,3 +118,36 @@
   font-family: "Montserrat";
   float: left;
 }
+
+/* Profile page */
+
+.profile_pic {
+  padding: 8%;
+  padding-left: 15%;
+
+}
+
+.info {
+  list-style: none;
+  padding: 4%;
+  padding-left: 10%;
+
+}
+
+#info_menu{
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+
+.profile_info {
+
+}
+
+.bookmark {
+  border: 2px solid black;
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: center;
+  height: 90%;
+  padding: 10px;
+}
