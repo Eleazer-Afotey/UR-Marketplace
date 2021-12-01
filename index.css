@@ -1,33 +1,31 @@
-.fixed-top {
-  background-color: #002d62;
-}
-
-.navbar {
-  background-color: #002d62;
-}
-
-.navigator {
-  width: 100%;
+.inner-nav {
   background-color: #002d62;
   padding-top: 10px;
-  color: white;
-}
-.navigator ul {
-  list-style-type: none;
-  display: inline;
 }
 
-.navigator ul li {
+.inner-nav li {
+  display: inline;
+  color: white;
+  padding: 50px;
+  font-size: 1.4vw;
   font-family: "Montserrat";
-  width: 18%;
-  float: left;
-  font-size: 1.5vw;
-  text-align: right;
+}
+
+.inner-nav a {
+  color: white;
+}
+
+.inner-nav a:hover {
+  color: red;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .navigator.col-md-12 {
     display: block;
+  }
+  #phone-menu {
+    display: none;
   }
   .menu.material-icons {
     display: none;
@@ -36,6 +34,10 @@
 @media (min-width: 1200px) {
   .navigator.col-lg-12 {
     display: block;
+  }
+
+  #phone-menu {
+    display: none;
   }
 
   .menu.material-icons {
@@ -97,12 +99,15 @@
 }
 
 .access {
-  margin-top: 50px;
   background-color: black;
 }
 
 .logs {
   margin-top: 15px;
+}
+
+.logs li:hover {
+  color: red;
 }
 
 .logs li {
