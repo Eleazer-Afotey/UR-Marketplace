@@ -27,7 +27,7 @@
 
 #logo #logo-link{
   text-decoration: none;
-  color: white;
+  color: #DC143C;
 }
 
 .menu-items{
@@ -42,6 +42,10 @@
 .menu-items a{
   text-decoration: none;
   color:white;
+}
+
+.menu-items a:hover{
+  color: #DC143C;
 }
 
 .nav-link{
