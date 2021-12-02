@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="upload.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Add icon library for button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>UR Marketplace</title>
+</head>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <!--header starts-->
 
-    <div id="title">UR MARKET PLACE</div>
-    <div id="message">
-      Upload items from you computer using functions from below
-    </div>
 
-    <div id="border">
-      <div id="uploadButtonBorder">
-        <div id="buttonSymbol"></div>
-        <button id="upload">Upload items</button>
+<body>
+
+    <!--Header Element-->
+    <header>
+        <!--this is a responsive navigation menu bar-->
+        <div class = "menu-bar">
+          <h1 id = "logo"><a href = "index.html" id="logo-link">
+              UR MARKET PLACE</a></h1>
+              <ul class = "menu-items" id = "menu-items">
+                  <li id = "home"><a href="index.html" class = "nav-link">
+                     Home</a></li>
+                  <li id = "upload"><a href="upload.html" class = "nav-link">
+                      Upload</a></li>
+                  <li id = "profile"><a href="profile.html" class = "nav-link">
+                      Profile</a></li>
+                  <li id = "login"><a href="login-page.html" class = "nav-link">
+                      Login</li></a>
+                  <li id = "singup"><a href="signup-page.html" class = "nav-link">
+                      Signup</li></a>
+              </ul>
+
+              <!--hamburger icon-->
+              <div class = "menu-icon">
+                  <i class="material-icons" onclick = "showMenu()">menu</i>
+              </div>
       </div>
+    </header>
+      <!--header ends-->
 
-      <div id=""></div>
+    <div id="uploadTitle"> Upload items </div>
+    <div id="uploadMessage"> Upload items from you computer </div>
+
+    <div id="uploadBorder">
+        <div>
+            <input id="uploadBtn" type="file" placeholder="upload items here"> </input>
+        </div>
+
+        
+        <div id="label"> 
+            <select>
+                <option>Appliance</option>
+                <option>Devices </option>
+                <option>Clothes </option>   
+                <option>Books </option>   
+                <option>Shoes </option> 
+                <option>Utensils</option> 
+                <option>Cleaning Supplies </option>    
+                <option>Furniture </option>
+            </select>
+            <input type="text" placeholder="Item name"></input>
+        </div>
+
+        <div id="textBox"> 
+            <input type="email"  placeholder="Email"></input>            
+        </div>
+            
+        <div id="submit">
+            <input type="submit" value="Submit"> </input>
+        </div>
+            
+        
+
     </div>
-  </body>
+
+    <div class="container-fliud justify-content-center">
+        <footer>
+            <div class="row justify-content-center" id="footer">
+                <p id="footer-text">FOOTER</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</body>
 </html>
