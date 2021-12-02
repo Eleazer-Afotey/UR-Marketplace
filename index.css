@@ -118,3 +118,61 @@
   font-family: "Montserrat";
   float: left;
 }
+
+#uploadTitle{
+    text-align: center;
+    color: black;
+    font-size: larger;
+    padding-top: 5%;
+    text-decoration: underline;
+}
+
+#uploadMessage{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
+#uploadBorder{
+  border-radius: 25px;
+  border: 3px solid #42464d;
+  background-color: rgb(212, 211, 212);
+  margin: auto;
+  padding: 20px; 
+  width: 40%;
+  height: 450px; 
+}
+
+/* #uploadButtonBorder{
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  border: 3px solid #42464d;
+  padding: 20px; 
+  width: 90%;
+  height: 25%; 
+} */
+
+#uploadBtn{
+    border-radius: 2px;
+    margin: auto;
+    text-align: center; border: 2px solid #42464d;
+    width: 90%;
+    height: 10%;
+    font-size: 2vw;
+    border-radius: 10px;
+}
+
+#uploadBtn:hover {
+  background-color: rgb(73, 100, 180);
+}
+
+#textBox #label{
+  border-radius: 2px;
+  width: 90%;
+  height: 80%;
+  font-size: 2vw;
+  border-radius: 10px;
+}
