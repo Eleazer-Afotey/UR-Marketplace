@@ -4,10 +4,11 @@ var theDate = new Date();
 var footer = document.getElementById("footer-text");
 footer.textContent = "@Copyright " + theDate.getFullYear();
 
+
 //bookmark
 var text = [
 {
-  itm_name: "tv",
+  itm_name: "Samsung Television",
   icon_name: "local_pizza"
 },
 ]
@@ -29,13 +30,25 @@ let data = [text[0].itm_name];
 console.log(typeof text);
 console.log( data);
 let list = document.getElementById("bookmark_menu");
+//hamburger icon functionality
+function showMenu(){
+    /*when the user clicks on the hamburger,
+    toggle between hiding and showing the menu items*/
+    document.getElementById("menu-items").classList.toggle("show");
+}
+
+
+var item = document.getElementById("item1");
+var material = document.getElementById("item1-get");
+var bookItem = document.getElementById("item1-bookmark");
 
 data.forEach((it) => {
   let li = document.createElement("li");
   console.log(typeof it);
   li.innerText = it;
   list.appendChild(li);
-
+  li.style.listStyleType = "numbered";
+  li.style.listStylePosition = "outside"
   });
 
 
@@ -46,13 +59,10 @@ var item = document.getElementById("item1");
 function show() {
   console.log("clicked");
 }
-item.addEventListener("click", show);
 
-var bookItem = document.getElementById("item1-bookmark");
 function bookmark() {
   if (bookItem.textContent === "bookmark_border") {
     bookItem.textContent = "bookmark";
-    alert("Item bookmarked");
   } else {
     bookItem.textContent = "bookmark_border";
   }
@@ -70,3 +80,10 @@ menuIcon.addEventListener("click", function () {
   }
 });
 
+
+//Check Bookmark
+function checkBookmark() {
+  return bookItem.textContent === "bookmark";
+}
+
+item.addEventListener("click", show);

@@ -17,9 +17,7 @@
 }
 
 #logo {
-  color: white;
-  font-weight: lighter;
-  font-size: 26px;
+  font-size: 30px;
   width: 15%;
   margin-left: -250px;
   cursor: pointer; /*design pattern to encourage viewer to click*/
@@ -27,7 +25,8 @@
 
 #logo #logo-link {
   text-decoration: none;
-  color: white;
+  color: #dc143c;
+  font-weight: bold;
 }
 
 .menu-items {
@@ -44,12 +43,12 @@
   color: white;
 }
 
-.nav-link {
-  color: white;
+.menu-items a:hover {
+  color: #dc143c;
 }
 
-.menu-items a:hover {
-  color: red;
+.nav-link {
+  color: white;
 }
 
 .menu-icon {
@@ -123,25 +122,14 @@
     top: 75px;
     display: none;
     flex-direction: column;
-    align-items: center;
     font-size: 16px;
     width: 25%;
     transition: 0.3s;
+    z-index: 1;
   }
 
-  /*class to get menu-items to display when hamburger is clicked*/
-  .menu-items-show {
-    position: fixed;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #163c75;
-    right: 0;
-    height: 220px;
-    top: 50px;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    width: 25%;
-    transition: 0.3s;
+  .show {
+    display: flex;
   }
 }
 
@@ -228,14 +216,28 @@
   margin-top: 40px;
 }
 
-#footer {
-  background-color: black;
-  color: white;
-  text-align: center;
+/*footer fix :)*/
+html {
+  height: 100%;
 }
 
-#footer-text {
-  margin-top: 15px;
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 60px;
 }
 
 .test {
@@ -272,11 +274,72 @@
   float: left;
 }
 
+#uploadTitle {
+  text-align: center;
+  color: black;
+  font-size: larger;
+  padding-top: 2%;
+  text-decoration: underline;
+}
+
+#uploadMessage {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#uploadBorder {
+  border-radius: 25px;
+  border: 3px solid #42464d;
+  background-color: rgb(212, 211, 212);
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+  height: 450px;
+}
+
+/* #uploadButtonBorder{
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  border: 3px solid #42464d;
+  padding: 20px;
+  width: 90%;
+  height: 25%;
+} */
+
+#uploadBtn {
+  border-radius: 2px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #42464d;
+  width: 90%;
+  height: 10%;
+  font-size: 2vw;
+  border-radius: 10px;
+}
+
+#uploadBtn:hover {
+  background-color: rgb(73, 100, 180);
+}
+
+#textBox,
+#label,
+#submit {
+  border-radius: 2px;
+  width: 95%;
+  height: 10vw;
+  padding: 2%;
+  font-size: 2vw;
+  border-radius: 10px;
+}
 /* Profile page */
 
 .profile_pic {
-  padding: 8%;
+  padding: 10%;
   padding-left: 15%;
+  padding-top: 15%;
 }
 
 .info {
@@ -290,18 +353,28 @@
   font-size: 25px;
 }
 
-.profile_info {
-}
-
 .bookmark {
   border: 2px solid black;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-right: 5%;
   text-align: center;
-  height: 90%;
+  height: 80%;
   padding: 10px;
 }
 
+.bookmark p{
+  font-size: larger;
+}
+
+#bookmark_menu {
+  width: 95%;
+  margin-left: 2%;
+  margin-top: 5%;
+  text-align: left;
+  background-color: lightgrey;
+  border: 0.3px solid black;
+  box-shadow: 3px 3px 3px lightgrey;
+}
 /*Appliance
 */
 .item-img {
