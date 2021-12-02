@@ -1,4 +1,4 @@
-body{
+ body{
     background-color: #F8F8F8;
 }
 
@@ -52,7 +52,7 @@ body{
     transform: translateX(5%);
     background-color: #DC143C;
     color: white;
-    
+
 }
 
 #login-button a{
@@ -109,9 +109,9 @@ button{
 
 @media screen and (min-width: 1920px){
     #text-logo{
-        font-size: 30px; 
+        font-size: 30px;
     }
-    
+
     #statement{
         font-size: 23px;
     }
@@ -127,15 +127,11 @@ button{
         font-size: 16px;
         transform: translateX(25%);
     }
-    
+
     .login-container{
         height: 350px;
         width: 50%;
         transform: translate(50%,25%);
-    }
-
-    #create-account{
-        height: 45px;
     }
 }
 
@@ -149,7 +145,7 @@ button{
         font-size: 12px;
         transform: translateX(10.5%);
     }
-    
+
     .login-container{
         height: 345px;
         width: 90%;
@@ -167,7 +163,7 @@ button{
         font-size: 10px;
         transform: translateX(10%);
     }
-    
+
     .login-container{
         height: 100%;
         width: 95%;
@@ -177,7 +173,6 @@ button{
     #create-account{
         margin-top: 0;
         margin-bottom: 2.5%;
-        
     }
 }
 
@@ -189,7 +184,7 @@ button{
 .signup-container{
     border: 1px solid none;
     background-color: white;
-    height: 550px;
+    height: 515px;
     width: 40%;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -218,9 +213,8 @@ button{
 }
 
 #signupMessage{
-    transform: translateX(50%); 
+    transform: translateX(50%);
     font-size: 14px;
-    margin-left: 60px;
 }
 
 #already{
@@ -235,7 +229,7 @@ button{
 }
 
 /*edits for specific screen sizes on sign up page*/
-@media screen and (min-width: 415px) and (max-width: 1200px){ 
+@media screen and (min-width: 415px) and (max-width: 1200px){
     #text-logo{
         font-size: 16px;
         transform: translate(30%,25%);
@@ -247,15 +241,14 @@ button{
     }
 
     .signup-container{
-        height: 535px;
+        height: 515px;
         width: 50%;
         transform: translate(50%,25%);
     }
 
     #signupMessage{
-        transform: translate(25%,300%); 
+        transform: translate(25%,450%);
         font-size: 12px;
-        margin-left: 60px;
     }
 }
 
@@ -269,17 +262,38 @@ button{
         font-size: 12px;
         transform: translateX(10.5%);
     }
-    
+
     .signup-container{
-        height: 535px;
+        height: 515px;
         width: 90%;
         transform: translate(5.5%,25%);
     }
 
     #signupMessage{
-        transform: translate(1%,200%); 
+        transform: translate(1%,250%);
         font-size: 12px;
     }
-
 }
 
+@media screen and (max-width:320px){
+    #text-logo{
+        font-size: 12px;
+        transform: translate(11.5%,40%);
+    }
+
+    #statement{
+        font-size: 10px;
+        transform: translateX(10%);
+    }
+
+    .login-container{
+        height: 100%;
+        width: 95%;
+        transform: translate(2.5%,15%);
+    }
+
+    #create-account{
+        margin-top: 0;
+        margin-bottom: 2.5%;
+    }
+}
