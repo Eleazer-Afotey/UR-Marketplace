@@ -32,3 +32,10 @@ menuIcon.addEventListener("click", function () {
     menuItems.style.display = "flex";
   }
 });
+
+var material = document.getElementById("item1-get");
+
+//Check Bookmark
+function checkBookmark() {
+  return bookItem.textContent === "bookmark";
+}
