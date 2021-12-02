@@ -21,3 +21,14 @@ function bookmark() {
   }
 }
 bookItem.addEventListener("click", bookmark);
+//hamburger functionality
+var menuIcon = document.querySelector(".menu-icon");
+var menuItems = document.querySelector(".menu-items");
+
+menuIcon.addEventListener("click", function () {
+  if (menuItems.style.display == "none") {
+    menuItems.style.display = "flex";
+  } else if ((menuItems.style.display = "none")) {
+    menuItems.style.display = "flex";
+  }
+});
