@@ -1,14 +1,14 @@
 /*navigation menu bar <properties that all screen sizes share>*/
-.menu-bar {
+.menu-bar{
   border: 1px solid none;
-  background-color: #163c75;
+  background-color: #163C75;
   height: 100px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  padding: 0;
+  padding:0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex; /*allows content to fit in one direction or another*/
   justify-content: space-around;
@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-#logo {
+#logo{
   color: white;
   font-weight: lighter;
   font-size: 26px;
@@ -25,12 +25,12 @@
   cursor: pointer; /*design pattern to encourage viewer to click*/
 }
 
-#logo #logo-link {
+#logo #logo-link{
   text-decoration: none;
   color: white;
 }
 
-.menu-items {
+.menu-items{
   font-size: 18px;
   list-style: none;
   display: flex;
@@ -39,111 +39,98 @@
   color: white;
 }
 
-.menu-items a {
+.menu-items a{
   text-decoration: none;
+  color:white;
+}
+
+.nav-link{
   color: white;
 }
 
-.nav-link {
-  color: white;
-}
-
-.menu-items a:hover {
-  color: red;
-}
-
-.menu-icon {
+.menu-icon{
   display: none; /*don't want icon visible when screen is larger than 800px*/
 }
 
 /*navigation menu bar <large screens(e.g macbook)>*/
-@media screen and (min-width: 1600px) and (max-width: 5000px) {
-  .menu-bar {
-    height: 80px;
+@media screen and (min-width: 1600px) and (max-width: 5000px){
+  .menu-bar{
+      height: 80px;
   }
 
-  #logo {
-    font-size: 22px;
-    margin-left: -180px;
+  #logo{
+      font-size: 22px;
+      margin-left: -180px;
   }
 
-  .menu-items {
-    font-size: 18px;
-    width: 50%;
-    margin-right: -200px;
+  .menu-items{
+      font-size: 18px;
+      width: 50%;
+      margin-right: -200px;
   }
 }
 
 /*navigation menu bar <medium screens>*/
-@media screen and (min-width: 800px) and (max-width: 1600px) {
-  .menu-bar {
-    height: 70px;
+@media screen and (min-width: 800px) and (max-width: 1600px){
+  .menu-bar{
+      height: 70px;
   }
 
-  #logo {
-    font-size: 16px;
-    margin-left: -60px;
-    width: 20%;
+  #logo{
+      font-size: 16px;
+      margin-left: -60px;
+      width: 20%;
   }
 
-  .menu-items {
-    font-size: 12px;
-    width: 50%;
-    margin-right: -75px;
+  .menu-items{
+      font-size: 12px;
+      width: 50%;
+      margin-right: -75px;
   }
 }
 
 /*navigation menu bar <small screens (e.g mobile phone)>*/
-@media screen and (max-width: 800px) {
-  .menu-bar {
-    height: 80px;
+@media screen and (max-width: 800px){
+  .menu-bar{
+      height: 80px;
   }
 
-  #logo {
-    font-size: 16px;
-    width: 50%;
-    margin-left: -30px;
+  #logo{
+      font-size: 16px;
+      width: 50%;
+      margin-left: -30px;
+      
   }
 
   /*we want the menu icon to show for small devices*/
-  .menu-icon {
-    display: block;
-    width: 25px;
-    color: white;
-    cursor: pointer; /*design pattern to encourage viewer to click*/
+  .menu-icon{
+      display: block;
+      width: 25px;
+      color: white;
+      cursor: pointer; /*design pattern to encourage viewer to click*/
   }
-
+  
   /*menu items should not be visible*/
-  .menu-items {
-    position: fixed;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #163c75;
-    right: 0;
-    height: 220px;
-    top: 75px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    width: 25%;
-    transition: 0.3s;
+  .menu-items{
+      position: fixed;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #163C75;
+      right:0;
+      height: 220px;
+      top: 75px;
+      display: none;
+      flex-direction: column;
+      font-size: 16px;
+      width: 25%;
+      transition: 0.3s;
+      z-index:1;
   }
 
-  /*class to get menu-items to display when hamburger is clicked*/
-  .menu-items-show {
-    position: fixed;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #163c75;
-    right: 0;
-    height: 220px;
-    top: 50px;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    width: 25%;
-    transition: 0.3s;
+  .show{
+    display:flex;
   }
 }
+
 
 /*css for body after header*/
 .inner-nav {
@@ -228,14 +215,28 @@
   margin-top: 40px;
 }
 
-#footer {
-  background-color: black;
-  color: white;
-  text-align: center;
+/*footer fix :)*/
+html {
+  height: 100%;
 }
 
-#footer-text {
-  margin-top: 15px;
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color:white;
+  height:60px;
 }
 
 .test {
@@ -409,3 +410,4 @@ input[type="submit"]:hover {
   padding: 20px;
   margin: 20px;
 }
+
