@@ -17,9 +17,7 @@
 }
 
 #logo{
-  color: white;
-  font-weight: lighter;
-  font-size: 26px;
+  font-size: 30px;
   width: 15%;
   margin-left: -250px;
   cursor: pointer; /*design pattern to encourage viewer to click*/
@@ -28,6 +26,7 @@
 #logo #logo-link{
   text-decoration: none;
   color: #DC143C;
+  font-weight: bold;
 }
 
 .menu-items{
