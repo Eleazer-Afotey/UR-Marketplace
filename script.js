@@ -1,11 +1,11 @@
 //Date element
 var theDate = new Date();
-
 var footer = document.getElementById("footer-text");
 footer.textContent = "@Copyright " + theDate.getFullYear();
 
-var item = document.getElementById("item1");
+//bookmark
 var material = document.getElementById("item1-get");
+var item = document.getElementById("item1");
 var bookItem = document.getElementById("item1-bookmark");
 var upload = document.getElementById("submit");
 var submit = document.getElementById("submit-request");
@@ -20,6 +20,7 @@ function bookmark() {
     bookItem.textContent = "bookmark_border";
   }
 }
+
 bookItem.addEventListener("click", bookmark);
 
 //bookmark
