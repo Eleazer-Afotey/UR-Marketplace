@@ -4,62 +4,15 @@ var theDate = new Date();
 var footer = document.getElementById("footer-text");
 footer.textContent = "@Copyright " + theDate.getFullYear();
 
-
-//bookmark
-var text = [
-{
-  itm_name: "Samsung Television",
-  icon_name: "local_pizza"
-},
-]
-
-var material = document.getElementById("item1-get");
-
-//Check Bookmark
-function checkBookmark() {
-  return bookItem.textContent === "bookmark";
-}
-
-function bookmarkItem(){
-  if(checkBookmark()){
-    text[0].itm_name = material.textContent;
-  }
-}
-
-let data = [text[0].itm_name];
-console.log(typeof text);
-console.log( data);
-let list = document.getElementById("bookmark_menu");
-//hamburger icon functionality
-function showMenu(){
-    /*when the user clicks on the hamburger,
-    toggle between hiding and showing the menu items*/
-    document.getElementById("menu-items").classList.toggle("show");
-}
-
-
 var item = document.getElementById("item1");
 var material = document.getElementById("item1-get");
 var bookItem = document.getElementById("item1-bookmark");
+var upload = document.getElementById("submit");
+var submit = document.getElementById("submit-request");
 
-data.forEach((it) => {
-  let li = document.createElement("li");
-  console.log(typeof it);
-  li.innerText = it;
-  list.appendChild(li);
-  li.style.listStyleType = "numbered";
-  li.style.listStylePosition = "outside"
-  });
-
-
-
-//document.getElementById("bookmark_menu").innerHTML = obj.itm_name;
-var item = document.getElementById("item1");
-      console.log(item);
-function show() {
-  console.log("clicked");
-}
-
+/*
+ *Bookmark Item
+ */
 function bookmark() {
   if (bookItem.textContent === "bookmark_border") {
     bookItem.textContent = "bookmark";
@@ -68,6 +21,48 @@ function bookmark() {
   }
 }
 bookItem.addEventListener("click", bookmark);
+
+//bookmark
+var text = [
+  {
+    itm_name: "Samsung Television",
+    icon_name: "local_pizza",
+  },
+];
+
+function uploaded() {
+  alert("Item Uploaded Successfully");
+}
+
+function request() {
+  alert("Request Submitted Successfully");
+}
+upload.addEventListener("click", uploaded);
+submit.addEventListener("click", request);
+//hamburger icon functionality
+function showMenu() {
+  /*when the user clicks on the hamburger,
+    toggle between hiding and showing the menu items*/
+  document.getElementById("menu-items").classList.toggle("show");
+}
+
+let li = document.createElement("li");
+console.log(typeof data);
+console.log(data);
+li.textContent = data;
+list.appendChild(li);
+li.style.listStyleType = "numbered";
+li.style.listStylePosition = "outside";
+
+// data.forEach((it) => {
+//   let li = document.createElement("li");
+//   console.log(typeof it);
+//   li.innerText = it;
+//   list.appendChild(li);
+//   li.style.listStyleType = "numbered";
+//   li.style.listStylePosition = "outside";
+// });
+
 //hamburger functionality
 var menuIcon = document.querySelector(".menu-icon");
 var menuItems = document.querySelector(".menu-items");
@@ -79,11 +74,3 @@ menuIcon.addEventListener("click", function () {
     menuItems.style.display = "flex";
   }
 });
-
-
-//Check Bookmark
-function checkBookmark() {
-  return bookItem.textContent === "bookmark";
-}
-
-item.addEventListener("click", show);
