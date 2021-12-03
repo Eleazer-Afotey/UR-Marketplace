@@ -328,8 +328,7 @@ footer {
   background-color: rgb(73, 100, 180);
 }
 
-#textBox,
-#label,
+#itemName,
 #submit {
   border-radius: 2px;
   width: 95%;
