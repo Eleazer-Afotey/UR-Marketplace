@@ -28,7 +28,7 @@
 
 #logo #logo-link {
   text-decoration: none;
-  color: #dc143c;
+  color: white;
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .menu-items a:hover {
-  color: #dc143c;
+  text-decoration: underline;
 }
 
 .nav-link {
